@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -42,7 +41,7 @@
 
     <!-- Inicio about -->
 
-    <section>
+    <section class="section-about">
         <div class="about-container">
             <p class="about-presentación"> ¡Hola! Soy </p>
             <H1 class="about-titulo">Jessica Nogueroles </H1>
@@ -59,11 +58,13 @@
                 comprometida a seguir aprendiendo y evolucionando en este emocionante campo. </p>
 
             <button class="about-button">Saber Más</button>
-            <div >
-                <img class="about-imagen"  src="imagenes/dev about me.png" alt="Imagen About Me">
-            </div>
+
         </div>
-        
+
+        <div>
+            <img class="about-imagen" src="imagenes/dev about me.png" alt="Imagen About Me">
+        </div>
+
 
 
     </section>
@@ -72,20 +73,30 @@
 
     <!-- Inicio  mis conocimientos  -->
 
-    <section>
-        <h2>Mis conocimientos</h2>
-        <p>En esta sección, te presento una vista general de mis habilidades y conocimientos en el ámbito del desarrollo
+    <section class="conocimientos-container">
+
+        <h2 class="titulo-conocimientos">Mis conocimientos</h2>
+
+        <p class="texto-conocimientos">En esta sección, te presento una vista general de mis habilidades y conocimientos
+            en el ámbito del desarrollo
             web. A lo largo de mi carrera, he adquirido experiencia y competencias en varias tecnologías clave que me
             permiten crear experiencias web innovadoras y funcionales.</p>
         </p>
-        <Ul>
-            <li>HTML 5</li>
-            <li>CSS 3</li>
-            <li>Sass</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>GIT</li>
+
+        <Ul class="lista-conocimientos">
+            <li class="icono-conocimientos"><i class="fa-brands fa-html5" style="color: #9c7d65;"></i> <span>HTML
+                    5</span>
+            <li class="icono-conocimientos"><i class="fa-brands fa-css3-alt" style="color: #9c7d65;"></i> <span>CSS
+                </span>
+            <li class="icono-conocimientos"><i class="fa-brands fa-sass" style="color: #9c7d65;"></i> <span>Sass</span>
+            <li class="icono-conocimientos"><i class="fa-brands fa-js" style="color: #9c7d65;"></i>
+                <span>JavaScript</span>
+            <li class="icono-conocimientos"><i class="fa-brands fa-react" style="color: #9c7d65;"></i>
+                <span>React</span>
+            <li class="icono-conocimientos"><i class="fa-brands fa-git-alt" style="color: #9c7d65;"></i>
+                <span>GIT</span>
         </ul>
+
     </section>
 
     <!-- Fin  mis conocimientos  -->

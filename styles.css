@@ -13,7 +13,7 @@ body {
     background-color: #ece7e1;
 }
 
-/* Estilos Nav */
+/* ------ Estilos Nav ------ */
 .nav-container {
     background-color: #1a1818;
     padding: 20px;
@@ -40,17 +40,20 @@ body {
     text-decoration: line-through;
 }
 
-/* Fin Estilos Nav */
+/* ------ Fin Estilos Nav ------ */
 
-/* Estilos About */
-.about-container {
+/* ------ Estilos About ------ */
+
+.section-about {
     display: flex;
-    flex-direction: column;
+    flex-direction: space-between;
     align-items: flex-start;
-    text-align: left;
-  
-    
+    width:80%;
+    margin: 0 auto;
+
 }
+   
+
 
 .about-presentación {
     font-family: "Open Sans", sans-serif;
@@ -60,6 +63,7 @@ body {
     font-variation-settings: "wdth" 100;
     background-color: #ece7e1;
     font-size: 25px;
+    margin-top: 60px;
 
     
     
@@ -70,11 +74,14 @@ body {
     font-weight: 600;
     font-style: normal;
     font-size: 60px;
+    margin-bottom: 20px;
 
 }
 
 .about-texto {
     text-align: justify;
+    margin-bottom: 20px;
+    width: 85%;
     
 }
 
@@ -93,6 +100,7 @@ body {
     cursor: pointer;
     overflow: hidden;
     transition-duration: 0.4s;
+    margin-bottom: 30px;
 
 }
 
@@ -105,13 +113,88 @@ body {
 .about-imagen {
     width: 400px;
     height: auto;
+    margin-top: 50px;
     
 
 }
 
-/* Fin Estilos About */
+/* ------ Fin Estilos About ------ */
 
-/* Inicio Quote */
+/* ------ Inicio conocimientos ------ */
+
+.conocimientos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 100px auto;
+    
+
+
+}
+
+.titulo-conocimientos {
+    font-size: 35px;
+    margin-bottom: 20px;
+    
+
+}
+
+.texto-conocimientos {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: none; 
+    
+}
+.lista-conocimientos {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+.icono-conocimientos {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    flex: 1 0 calc(33.33% - 20px);
+    background-color: #F7F5F3;
+    border-radius: 10px;
+
+}
+
+.icono-conocimientos i {
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+.icono-conocimientos span {
+
+    display: block;
+    margin-top: 5px;
+    font-size: 25px;
+    
+}
+
+.icono-conocimientos:hover {
+    background-color: #dfd8d0;
+}
+    
+
+
+/* ------ Fin conocimientos ------ */
+
+
+/* ------ Inicio Quote ------ */
 
 .container-quote {
     background-color: #1a1818;
@@ -152,4 +235,4 @@ body {
 
 }
 
-/* Fin Quote */
+/* ------ Fin Quote ------ */
