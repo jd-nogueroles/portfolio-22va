@@ -6,49 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio 22va</title>
     <script src="https://kit.fontawesome.com/1f266e94f5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Inicio Nav Bar-->
+    <!-- Inicio Nav -->
+    <div class="nav-container">
 
-    <nav>
-        <ul>
-            <li>HOLA</li>
-            <li>CONOCIMIENTOS</li>
-            <li>PROYECTOS</li>
-            <li>CONTACTO</li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="#">HOLA</a></li>
+                <li><a href="#">CONOCIMIENTOS</a></li>
+                <li><a href="#">PROYECTOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
 
-    <!-- Fin Nav Bar-->
+    <!-- Fin Nav -->
 
-    <!-- Inicio presentación -->
+    <!-- Inicio about -->
 
     <section>
-        <p> ¡Hola! Soy </p>
-        <H1>Jessica Nogueroles </H1>
-        <p> Desde siempre me ha interesado el mundo de las páginas web. Fue durante mi tiempo en UENI Ltd donde tuve mi
-            primer contacto con el diseño web. Aunque en UENI trabajamos principalmente con un CMS, este entorno
-            despertó mi curiosidad por la posibilidad de crear algo completamente desde cero. Ahora, mientras estoy
-            haciendo carrera en Desarrollo Frontend en ADA ITW, estoy explorando esta pasión al máximo, buscando nuevas
-            formas de expresión y aprendiendo a construir experiencias web únicas. Mi objetivo es seguir creciendo y
-            desarrollando mis habilidades para poder contribuir de manera significativa en el ámbito del desarrollo web.
-            Creo firmemente en la importancia de la innovación, la creatividad y la resolución de problemas, y estoy
-            comprometida a seguir aprendiendo y evolucionando en este emocionante campo. </p>
-        <img src="imagenes/dev about me.png" alt="Imagen About Me">
-        <button>LO QUE HAGO</button>
+        <div class="about-container">
+            <p class="about-presentación"> ¡Hola! Soy </p>
+            <H1 class="about-titulo">Jessica Nogueroles </H1>
+            <p class="about-texto"> Desde siempre me ha interesado el mundo de las páginas web. Fue durante mi tiempo en
+                UENI Ltd donde tuve mi
+                primer contacto con el diseño web. Aunque en UENI trabajamos principalmente con un CMS, este entorno
+                despertó mi curiosidad por la posibilidad de crear algo completamente desde cero. Ahora, mientras estoy
+                haciendo carrera en Desarrollo Frontend en ADA ITW, estoy explorando esta pasión al máximo, buscando
+                nuevas
+                formas de expresión y aprendiendo a construir experiencias web únicas. Mi objetivo es seguir creciendo y
+                desarrollando mis habilidades para poder contribuir de manera significativa en el ámbito del desarrollo
+                web.
+                Creo firmemente en la importancia de la innovación, la creatividad y la resolución de problemas, y estoy
+                comprometida a seguir aprendiendo y evolucionando en este emocionante campo. </p>
+
+            <button class="about-button">Saber Más</button>
+            <div >
+                <img class="about-imagen"  src="imagenes/dev about me.png" alt="Imagen About Me">
+            </div>
+        </div>
+        
+
 
     </section>
 
-    <!-- Fin presentación -->
+    <!-- Fin about -->
 
     <!-- Inicio  mis conocimientos  -->
 
     <section>
         <h2>Mis conocimientos</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem in ea minus adipisci quod perferendis,
-            molestias ad assumenda ipsam? Est minima ex illo unde provident sed debitis cumque incidunt nihil.</p>
+        <p>En esta sección, te presento una vista general de mis habilidades y conocimientos en el ámbito del desarrollo
+            web. A lo largo de mi carrera, he adquirido experiencia y competencias en varias tecnologías clave que me
+            permiten crear experiencias web innovadoras y funcionales.</p>
+        </p>
         <Ul>
             <li>HTML 5</li>
             <li>CSS 3</li>
@@ -62,9 +91,11 @@
     <!-- Fin  mis conocimientos  -->
 
     <!-- Inicio Quote  -->
-    <blockquote>
-        <p>"La perseverancia es el motor del éxito."</p>
-        <p> Belva Lockwood</p>
+
+    <blockquote class="container-quote">
+        <div class="comilla-quote"><i class="fa-solid fa-quote-left" style="color: #ece7e1;"></i></i></div>
+        <p class="frase-quote">La perseverancia es el motor del éxito.</p>
+        <p class="autor-quote"> Belva Lockwood</p>
     </blockquote>
 
     <!-- Fin Quote  -->
@@ -110,13 +141,13 @@
                 <li>PROYECTOS</li>
                 <li>CONTACTO</li>
             </ul>
-            <div>  <!-- Links  -->
-            <ul>
-                <li><i class="fa-brands fa-linkedin" style="color: #9c7d65;"></i></li>
-                <li><i class="fa-brands fa-square-instagram" style="color: #9c7d65;"></i></li>
-                <li><i class="fa-solid fa-envelope" style="color: #9c7d65;"></i></li>
-            
-            </ul>
+            <div> <!-- Links  -->
+                <ul>
+                    <li><i class="fa-brands fa-linkedin" style="color: #9c7d65;"></i></li>
+                    <li><i class="fa-brands fa-square-instagram" style="color: #9c7d65;"></i></li>
+                    <li><i class="fa-solid fa-envelope" style="color: #9c7d65;"></i></li>
+
+                </ul>
             </div>
             <p>Hecho con 🤎 por Jessica Nogueroles </p>
         </footer>
