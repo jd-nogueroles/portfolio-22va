@@ -293,7 +293,7 @@ body {
     display: block; 
     margin-top: 10px; 
     font-weight: bold;
-    font-size: 14px; 
+    font-size: 20px; 
     margin-bottom: 10px;
 }
 
@@ -307,3 +307,97 @@ body {
 
 
 /* ------ Fin mis proyectos ------ */
+
+
+
+/* ------ Inicio contact form ------ */
+
+.container-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 70%;
+    margin: 100px auto;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align:left;
+}
+
+.titulo-contact {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.texto-contact {
+margin-bottom: 20px;
+text-align: justify;
+font-size: 16px;
+
+}
+
+
+
+
+.formulario-contact {
+    flex: 1;
+    max-width: 55%;
+    padding-left: 40px;
+}
+    
+
+.formulario-contact h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.titulo2-contact {
+    padding-left: 40px;
+    margin-bottom: 18px;
+}
+
+.contact2-formulario {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    padding-left: 40px;
+    
+}
+
+
+
+button {
+    display: block;
+    background-color: #1a1818;
+    color: #ece7e1;
+    padding: 8px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition-duration: 0.4s;
+    margin-bottom: 30px;
+    margin-top: 20px
+    
+    
+}
+
+button:hover {
+    background-color: #333;
+}
+/* ------ Fin contact form ------ */
