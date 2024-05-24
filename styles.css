@@ -13,6 +13,9 @@ body {
     background-color: #ece7e1;
 }
 
+/***************** Para desktop ***************/
+
+
 /* ------ Estilos Nav ------ */
 .nav-container {
     background-color: #1a1818;
@@ -101,9 +104,14 @@ body {
     overflow: hidden;
     transition-duration: 0.4s;
     margin-bottom: 30px;
+    
 
 }
 
+.about-button a {
+    text-decoration: none;
+    color: #ffff;
+}
 .about-button:hover {
     width: 250px;
     margin-right: -50px;
@@ -467,6 +475,17 @@ button:hover {
 }
 .menu-footer li {
 margin: 0 20px ;
+
+
+}
+
+.menu-footer a {
+    text-decoration: none;
+    color: #ece7e1;
+}
+
+.menu-footer a:hover {
+    text-decoration: line-through;
 }
 
 .links-footer ul{
@@ -488,4 +507,106 @@ margin: 0 20px ;
     margin-bottom: 30px;
 }
 
+
 /* ------ Fin footer ------ */
+
+
+/***************** Para tablet ***************/
+
+@media (max-width: 768px) {
+
+/* ------ Inicio nav ------ */
+
+.nav-container nav ul {
+flex-direction: column;
+align-items: center;
+   
+}
+
+.section-about {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left: 100px;
+
+}
+
+/* ------ Fin nav ------ */
+
+/* ------ Inicio about ------ */
+
+.about-presentación {
+    font-size: 20px; 
+    margin-top: 40px;
+
+}
+
+.about-titulo {
+font-size: 40px;
+margin-bottom: 15px;
+}
+
+.about-texto {
+    width: 90%; 
+    margin-bottom: 15px;
+    
+}
+
+
+.about-button {
+    font-size: 18px;
+    padding: 8px 24px;
+}
+
+.about-imagen {
+    width: 80%;
+    margin-top: 30px;
+    padding-left: 50px;
+
+}  
+
+/* ------ Fin about ------ */
+
+/* ------ Inicio conocimientos ------ */
+
+.titulo-conocimientos {
+    font-size: 30px;
+}
+
+.texto-conocimientos{
+    font-size: 15px;
+}
+
+/* ------ Fin conocimientos ------ */
+
+/* ------ Inicio quote ------ */
+
+.comilla-quote{
+    font-size: 30px;
+}
+
+.frase-quote{
+    font-size: 25px;
+}
+
+.autor-quote {
+    font-size: 15px;
+}
+
+/* ------ fin conocimientos ------ */
+
+/* ------ inicio proyectos ------ */
+
+.titulo-proyectos{
+    font-size: 30px;
+}
+
+.container-imagenes-conocimientos span {
+    font-size: 15px; 
+    }
+/* ------ fin proyectos ------ */
+
+}
+/***************** Para celular ***************/
+
+/* @media (max-width: 480px) */
