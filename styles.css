@@ -249,6 +249,7 @@ body {
     align-items: center;
     width: 70%;
     margin: 100px auto;
+    cursor: pointer;
 
     
 }
@@ -320,11 +321,11 @@ body {
 
 /* ------ Inicio contact form ------ */
 
-.container-contact {
-    display: flex;
+.container-contact { 
+    display: flex; 
     justify-content: space-between;
     align-items: flex-start;
-    width: 70%;
+    width: 50%;
     margin: 100px auto;
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -333,11 +334,25 @@ body {
     padding: 20px;
 }
 
-.contact-info {
-    flex: 1;
-    margin-bottom: 20px;
+.contact-info, .contact-formulario {
+    width: 50vh;
+    margin: 30px;
+    position: relative;
+    margin-bottom: 20px; /* ------ borrar------ */
     font-size: 20px;
     text-align:left;
+
+}
+
+.contact-formulario {
+font-size: 16px;
+flex-flow: row;
+margin-right: 50px;
+
+}
+
+.form-group {
+margin-bottom: 15px;
 }
 
 .titulo-contact {
@@ -351,6 +366,7 @@ text-align: justify;
 font-size: 16px;
 
 }
+
 
 .links-contact {
     font-size: 15px;
@@ -416,10 +432,6 @@ font-size: 16px;
 }
 
 
-.titulo2-contact {
-    padding-left: 40px;
-    margin-bottom: 18px;
-}
 
 .contact2-formulario {
     display: block;
