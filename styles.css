@@ -43,7 +43,9 @@ body {
     text-decoration: line-through;
 }
 
-
+#menu-toggle {
+    display: none;
+}
 
 /* ------ Fin Estilos Nav ------ */
 
