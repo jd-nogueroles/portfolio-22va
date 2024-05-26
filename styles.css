@@ -338,9 +338,9 @@ body {
     width: 50vh;
     margin: 30px;
     position: relative;
-    margin-bottom: 20px; /* ------ borrar------ */
-    font-size: 20px;
+    margin-bottom: 20px; 
     text-align:left;
+
 
 }
 
@@ -350,6 +350,8 @@ flex-flow: row;
 margin-right: 50px;
 
 }
+
+
 
 .form-group {
 margin-bottom: 15px;
@@ -361,7 +363,7 @@ margin-bottom: 15px;
 }
 
 .texto-contact {
-margin-bottom: 20px;
+margin-bottom: 25px;
 text-align: justify;
 font-size: 16px;
 
@@ -371,6 +373,8 @@ font-size: 16px;
 .links-contact {
     font-size: 15px;
     margin-right: 10px;
+    margin-bottom: 100px;
+    margin-top: 40px;
 }
 
 .links-contact a {
@@ -388,7 +392,7 @@ font-size: 16px;
     background-color: #fff;
     color: #dbc7b3;
     border-radius: 50%;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 2.2rem;
     margin-right: 30px;
     text-align: center;
@@ -396,8 +400,7 @@ font-size: 16px;
 }
 
 
-
-.links-contact :hover {
+.links-contact:hover {
     color: #6c5c47;
     text-decoration: underline;
     cursor: pointer;
@@ -412,35 +415,22 @@ font-size: 16px;
     background-color: rgba(0, 0, 0, 0.3); /* Color oscuro al pasar el mouse */
 }
 
-.formulario-contact {
-    flex: 1;
-    max-width: 55%;
-    padding-left: 40px;
-    
-}
-    
 
-.formulario-contact h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    
-}
 
 .form-group {
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-
-
-.contact2-formulario {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    padding-left: 40px;
-    
+.contact-formulario input,
+.contact-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
-
 
 
 button {
@@ -465,7 +455,6 @@ button:hover {
 }
 
 
-/* !!!!!!!!!!!! LA FORM NO QUEDA BIEN RE HACERLA !!!!!!!! */
 
 /* ------ Fin footer ------ */
 
@@ -618,7 +607,129 @@ margin-bottom: 15px;
     }
 /* ------ fin proyectos ------ */
 
+/* ------Inicio contact form ------ */
+
+.container-contact {
+    display: flex;
+    flex-direction: column;
+
 }
+
+.texto-contact {
+    width: 250px;
+}
+
+.form-group {
+    width: 250px;
+}
+
+/* ------Fin contact form ------ */
+
+}
+
+
 /***************** Para celular ***************/
 
-/* @media (max-width: 480px) */
+@media (max-width: 600px) { 
+
+
+
+/* ------Inicio Nav ------ */
+
+/* *************menu hamburguesa *****************/
+
+/* ------Fin Nav ------ */
+
+/* ------inicio about------ */
+
+.about-presentación {
+    text-align: center;
+}
+
+.about-titulo{
+    text-align: center;
+}
+
+.about-texto {
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+.about-button{
+    text-align: center; /* -----no funciona------ */
+
+}
+
+.about-imagen{
+    text-align: center;
+}
+/* -----fin about------ */
+
+/* -----Inicio  mis conocimientos------ */
+
+
+/* -----fin  mis conocimientos------ */
+
+
+.titulo-conocimientos{
+    text-align: center;
+}
+
+.texto-conocimientos{
+    text-align: center;
+}
+
+/* -----inicio quote------ */
+
+.container-quote{
+    text-align: center;
+}
+
+/* -----fin  quote------ */
+
+/* ------Inicio contact form ------ */
+
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.texto-contact {
+    width: 160px;
+    text-align: center;
+
+}
+
+
+
+
+.form-group {
+    width: 250px;
+}
+
+.links-contact{
+    font-size: 12px;
+}
+
+.contact-formulario{
+    width: 160px;
+}
+
+.contact-formulario input,
+.contact-formulario textarea {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* ------Fin contact form ------ */
+
+/* ------inicio footer ------ */
+
+
+}
