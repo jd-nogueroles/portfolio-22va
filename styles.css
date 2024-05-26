@@ -43,6 +43,8 @@ body {
     text-decoration: line-through;
 }
 
+
+
 /* ------ Fin Estilos Nav ------ */
 
 /* ------ Estilos About ------ */
@@ -528,7 +530,7 @@ align-items: center;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-left: 100px;
+    padding-left: 50px;
 
 }
 
@@ -562,7 +564,7 @@ margin-bottom: 15px;
 .about-imagen {
     width: 80%;
     margin-top: 30px;
-    padding-left: 50px;
+    padding-left: 40px;
 
 }  
 
@@ -623,6 +625,12 @@ margin-bottom: 15px;
     width: 250px;
 }
 
+
+.contact-formulario input,
+    .contact-formulario textarea {
+        width: calc(100% - 20px);
+    }
+
 /* ------Fin contact form ------ */
 
 }
@@ -636,33 +644,46 @@ margin-bottom: 15px;
 
 /* ------Inicio Nav ------ */
 
-/* *************menu hamburguesa *****************/
+.nav-container .nav-links{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a1818;
+}
+
+#menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+}
+
+.nav-container ul.show {
+    display: flex;
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5em;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked + .menu-icon + ul {
+    display: flex;
+}
 
 /* ------Fin Nav ------ */
 
 /* ------inicio about------ */
 
-.about-presentación {
-    text-align: center;
-}
-
-.about-titulo{
-    text-align: center;
-}
-
-.about-texto {
-    font-size: 15px;
-    text-align: center;
-    
-}
-
-.about-button{
-    text-align: center; /* -----no funciona------ */
-
-}
 
 .about-imagen{
-    text-align: center;
+    
 }
 /* -----fin about------ */
 
@@ -671,14 +692,6 @@ margin-bottom: 15px;
 
 /* -----fin  mis conocimientos------ */
 
-
-.titulo-conocimientos{
-    text-align: center;
-}
-
-.texto-conocimientos{
-    text-align: center;
-}
 
 /* -----inicio quote------ */
 
@@ -689,47 +702,57 @@ margin-bottom: 15px;
 /* -----fin  quote------ */
 
 /* ------Inicio contact form ------ */
+  
+  .container-contact {
+    width: 90%; 
+    margin: 50px auto; 
+    padding: 15px
+  }
 
-.container-contact {
-    display: flex;
-    flex-direction: column;
-    
-}
+  .contact-info .titulo-contact {
+    font-size: 20px; 
+  }
 
-.texto-contact {
-    width: 160px;
-    text-align: center;
+  .contact-info .texto-contact {
+    font-size: 14px;
+  }
 
-}
+  .contact-info .links-contact {
+    font-size: 16px; 
+  }
 
+  .contact-info .links-contact i {
+    padding: 6px; 
+  }
 
+  .contact-formulario input,
+  .contact-formulario textarea {
+    width: 100%; 
+    padding: 8px; 
+  }
 
-
-.form-group {
-    width: 250px;
-}
-
-.links-contact{
-    font-size: 12px;
-}
-
-.contact-formulario{
-    width: 160px;
-}
-
-.contact-formulario input,
-.contact-formulario textarea {
-    width: calc(100% - 40px);
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
+  .contact-formulario button {
+    padding: 8px 20px; 
+  }
 
 /* ------Fin contact form ------ */
 
 /* ------inicio footer ------ */
 
+.footer-container {
+    padding: 40px 20px; 
+    font-size: 16px; 
+    text-align: center; 
+}
+
+.menu-footer {
+    flex-direction: column; 
+    align-items: center; 
+    font-size: 15px;
+  }
+
+  .menu-footer li {
+    margin: 10px 0; 
+  }
 
 }
