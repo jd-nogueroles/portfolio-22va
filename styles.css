@@ -385,6 +385,8 @@ font-size: 16px;
     color: inherit;
     text-decoration: none;
     margin-right: 10px;
+    display: inline-flex; 
+    align-items: center;
 }
 
 .links-contact i {
@@ -402,6 +404,8 @@ font-size: 16px;
     text-align: center;
 
 }
+
+
 
 
 .links-contact:hover {
@@ -691,7 +695,10 @@ margin-bottom: 15px;
 
 /* -----Inicio  mis conocimientos------ */
 
+.titulo-conocimientos {
+    text-align: center;
 
+}
 /* -----fin  mis conocimientos------ */
 
 
@@ -702,6 +709,15 @@ margin-bottom: 15px;
 }
 
 /* -----fin  quote------ */
+
+/* -----inicio mis proyectos ------ */
+
+.container-imagenes-conocimientos span{
+    font-size: 8px;
+}
+
+/* -----fin mis proyectos ------ */
+
 
 /* ------Inicio contact form ------ */
   
@@ -715,10 +731,13 @@ margin-bottom: 15px;
     font-size: 20px; 
   }
 
-  .contact-info .texto-contact {
+  .contact-info{
     font-size: 14px;
   }
-
+  
+  .titulo-contact {
+    font-size: 20px;
+  }
   .contact-info .links-contact {
     font-size: 16px; 
   }
